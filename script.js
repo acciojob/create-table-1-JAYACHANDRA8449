@@ -1,12 +1,12 @@
 function insert_Row() {
-        let table = document.getElementById("table"); // Get the table element
-        let tr = document.createElement("tr"); // Create a new <tr> element
+	const table = document.getElementById("sampleTable");
+	 let newRow = table.insertRow(0);
 
-        // Optionally, you can add multiple cells
-        let td = document.createElement("td");
-        td.textContent = "new cell"; // Set the content of the new cell
-        tr.appendChild(td); // Append the cell to the row
-
-        table.prepend(tr);
+	let cell1 = newRow.insertCell(0);
+	let cell2 = newRow.insertCell(1);
+	
+	cell1.textContent = "New Cell1";
+	cell2.textContent = "New Cell2";
+	
 
 }
